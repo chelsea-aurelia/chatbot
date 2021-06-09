@@ -1,0 +1,193 @@
+html{
+  height: 200%;
+}
+
+body {
+    background: linear-gradient(40deg, #1d006d, #ee7692);
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: small;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    line-height: 1.7em;
+  }
+
+  
+
+  button {
+    background-color: rgba(255,255,255,.5);
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 5px;
+  }
+
+  .openChatBtn {
+    background-color: rgb(181, 201, 255);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid rgb(85, 172, 206);
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px rgb(40, 56, 117);
+    animation: sweepin .5s;
+
+  }
+
+  .wrapper {
+    width: 400px;
+    height: 70vh;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    background-color: rgba(134, 106, 180, 0.555);
+    display: none;
+    flex-direction: column;
+    border-radius: 25px 25px;
+    position: fixed;
+    right: 2%;
+    bottom: 4%;
+    animation: sweepin .5s;
+    box-shadow: 1px 1px 18px 5px rgb(40, 56, 117);
+
+  }
+
+  .infeb{
+	  background-color: #003ee783;
+	  height:61px;
+	  border-radius: 25px 25px 2px 2px;
+    /* box-shadow: 0 5px 7px rgb(112, 109, 109) */
+    ;
+
+  }
+
+.infebotimg{
+	width: 200px;
+	height: auto;
+	border-radius: 25px 25px 25px 0;
+	position: fixed;
+}
+
+  @keyframes sweepin {
+    0% {
+      opacity: 0;
+      margin-bottom: -50px;
+    }
+    100% {
+      opacity: 1;
+      margin-bottom: 0px;
+    }
+  }
+
+  form {
+    flex: 5;
+    display: block;
+    padding: 15px;
+  }
+  .text-box {
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+  }
+  input#message {
+    padding-right: 9px;
+    padding-left: 3%;
+    font-size: 16px;
+    height: 27px;
+    display: block;
+    flex: 10;
+    outline: none;
+    margin: 0 10px 0 0;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 13px;
+  }
+
+  input.send-button {
+    display: block;
+    color: #fff;
+    background-color: #00af9c;
+    flex: 1;
+    border: 1px solid rgba(0,0,0,.2);
+    height: 27px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+
+  div#dialogue {
+    overflow-x: none;
+    overflow-y: auto;
+    display: block;
+    flex: 95;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border-radius: 0 30px;
+    margin-top: 5px;
+  }
+
+  .bot-row, .user-row {
+    padding: 1px 0 10px 0;
+    display: block;
+    position: relative;
+  }
+  .user-row {
+    text-align: right;
+  }
+
+  .user, .bot {
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 5px 8px;
+    margin: 1px;
+    border-radius: 12px;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+  }
+  .bot {
+    margin-right: 50px;
+    background-color: rgba(189, 234, 255, 0.85);
+  }
+  .user {
+    color: white;
+    background-color: rgb(67, 96, 221);
+    border-bottom-right-radius: 0;
+  }
+
+  .close {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    position: absolute;
+    top: 2.5%;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    box-shadow: 0 0 8px red;
+  }
+  img{
+    width: 40px;
+    height: auto;
+  }
+
+  .close:hover{
+    background-color: white;
+    color: red;
+    box-shadow: 0 0 8px white;
+    transition: .5;
+  }
